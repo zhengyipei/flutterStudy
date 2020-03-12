@@ -19,7 +19,7 @@ class ImageUtils {
     if (TextUtil.isEmpty(imageUrl)) {
       return AssetImage(getImgPath(holderImg));
     }
-    return CachedNetworkImageProvider(imageUrl,errorListener: ()=>Log.e(""));
+    return CachedNetworkImageProvider(imageUrl,errorListener: ()=>Log.e("图片加载失败！"));
   }
 
 

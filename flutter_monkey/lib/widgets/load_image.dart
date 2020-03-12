@@ -23,7 +23,26 @@ class LoadImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (TextUtil.isEmpty(image) || image == 'null'){
-         
+      return LoadAssetImage(holderImg,
+        height: height,
+        width: width,
+        fit: fit,
+        format: format);
+    }else{
+      if(image.startsWith('http')){
+        return CachedNetworkImage(imageUrl: image,
+          placeholder: (context,url) => LoadAssetImage(holderImg,height: height,width: width,fit: fit,format: format),
+          errorWidget: (context,url,error) => LoadAssetImage(holderImg,height:height,width: width,fit: fit,format: format),
+          width: width,
+          height: height,
+          fit: fit);
+      }else{
+        return LoadAssetImage(image,
+          height: height,
+          width: width,
+          fit: fit,
+          format: format);
+      }
     }
   }
 }
