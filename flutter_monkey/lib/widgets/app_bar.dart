@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_monkey/res/gaps.dart';
 import 'package:flutter_monkey/util/theme_utils.dart';
 
 
@@ -47,7 +48,7 @@ class MyAppBar extends StatelessWidget {
         backImg,
         color: ThemeUtils.getIconColor(context),
       ),
-    ) : null;
+    ) : Gaps.empty;
     return Container(
       child: null,
     );
