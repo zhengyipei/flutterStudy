@@ -36,7 +36,8 @@ dependencies:
   provider: ^4.0.4
   # 手势识别 https://github.com/aleksanderwozniak/simple_gesture_detector
   simple_gesture_detector: ^0.1.4
-
+  # WebView插件 https://github.com/flutter/plugins/tree/master/packages/webview_flutter
+  webview_flutter: 0.3.19+7
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.

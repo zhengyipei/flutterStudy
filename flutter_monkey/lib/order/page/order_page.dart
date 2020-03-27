@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class orderPage extends StatefulWidget {
-  orderPage({Key key}) : super(key: key);
+class OrderPage extends StatefulWidget {
+  OrderPage({Key key}) : super(key: key);
 
   @override
-  _orderPageState createState() => _orderPageState();
+  _OrderPageState createState() => _OrderPageState();
 }
 
-class _orderPageState extends State<orderPage> {
+class _OrderPageState extends State<OrderPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

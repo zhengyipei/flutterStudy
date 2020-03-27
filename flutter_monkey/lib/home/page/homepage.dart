@@ -39,8 +39,8 @@ class _homePageState extends State<homePage> {
   }
   void initData(){
     _pageList = [
-      orderPage(),
-      goodsPage(),
+      OrderPage(),
+      GoodsPage(),
       StatisticsPage(),
       ShopPage(),
     ];
