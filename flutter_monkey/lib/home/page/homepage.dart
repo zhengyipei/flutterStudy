@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_monkey/goods/page/goodspage.dart';
 import 'package:flutter_monkey/home/provider/home_provider.dart';
@@ -14,14 +12,12 @@ import 'package:flutter_monkey/widgets/load_image.dart';
 import 'package:provider/provider.dart';
 
 
-class homePage extends StatefulWidget {
-  homePage({Key key}) : super(key: key);
-
+class HomePage extends StatefulWidget {
   @override
-  _homePageState createState() => _homePageState();
+  _HomePageState createState() => _HomePageState();
 }
 
-class _homePageState extends State<homePage> {
+class _HomePageState extends State<HomePage> {
   var _pageList;
   var _appBarTitles = ['订单','商品','统计','店铺'];
   final _pageController =  PageController();
@@ -35,7 +31,7 @@ class _homePageState extends State<homePage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    
+    initData();
   }
   void initData(){
     _pageList = [

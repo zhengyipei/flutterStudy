@@ -24,7 +24,7 @@ class Routes {
         return WidgeNotFound();      
       }
     );
-    router.define(home, handler: Handler(handlerFunc: (BuildContext context,Map<String,List<String>> params)=>homePage()));
+    router.define(home, handler: Handler(handlerFunc: (BuildContext context,Map<String,List<String>> params)=>HomePage()));
     router.define(webViewPage, handler: Handler(handlerFunc:(_,params){
       String title = params['title']?.first;
       String url = params['url']?.first;

@@ -8,22 +8,22 @@ class Log {
   static const String tag = 'MONKEY-LOG';
   
   static init(){
-    LogUtil.debuggable = !ConStant.inProduction;
+    LogUtil.debuggable = !Constant.inProduction;
   }
 
   static d(String msg, {tag: tag}){
-    if (!ConStant.inProduction) {
+    if (!Constant.inProduction) {
       LogUtil.v(msg,tag:tag);
     }
   }
   static e(String msg, {tag: tag}){
-    if(ConStant.inProduction){
+    if(Constant.inProduction){
       LogUtil.v(msg,tag:tag);
     }
   }
 
   static json(String msg, {tag:tag}){
-    if (!ConStant.inProduction){
+    if (!Constant.inProduction){
       var data = convert.json.decode(msg);
       if(data is Map){
         
